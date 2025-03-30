@@ -3,7 +3,7 @@ import CardButton from './cardButton';
 import plansData from '../plans.json';
 
 
-const CardPlans = ({ name, price, discount, bandwidth, price_per_unit, additional_features }) => {
+const CardPlans = () => {
 
   const { plans } = plansData;
   console.log(plans)
