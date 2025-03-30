@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+/* Start my card*/
+/* .card_wrapper {
+  display: flex;
+  align-self: center;
+  background-color: #0000;
+  border: 0;
+  border-radius: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px auto;
+  max-width: 1024px;
+  padding: 40px;
+}
+
+.card_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-items: center;
+  margin: 2rem 0;
+}
+
+.plan_card {
+  color: #251e2f;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #d4e5f9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 16px;
+  width: 250px;
+}
+
+.plan_card_header {
+  font-size: 32px;
+  align-items: center;
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  justify-content: space-between;
+  min-height: 34px;
+  width: 100%;
+}
+
+.plan_card_name {
+  align-items: center;
+  display: flex;
+  font-family: Montserrat, sans-serif;
+  justify-content: space-between;
+  min-height: 34px;
+  width: 100%;
+}
+
+.plan_card_name_label {
+  align-items: center;
+  background: #ff8163;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  padding: 3px 7px;
+}
+
+.plan_card_price_original {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.plan_card_price {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.plan_card_description_container {
+  display: flex;
+  flex: 1 0 auto;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.button {
+  background-color: #6fdf90;
+  border-radius: 4px;
+  color: #251e2f;
+  font-size: 12px;
+  height: 42px;
+  text-transform: uppercase;
+  transition: all 0.475s;
+  width: 100%;
+  cursor: pointer;
+} */
+
+/* End my card*/

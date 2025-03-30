@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
+}
+
+.card_wrapper {
+  display: flex;
+  align-self: center;
+  background-color: #0000;
+  border: 0;
+  border-radius: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px auto;
+  max-width: 1024px;
+  padding: 40px;
+
+  h2 {
+    color: #000;
+    font-style: normal;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .card_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-items: center;
+    margin: 2rem 0;
+
+    .plan_card {
+      color: #251e2f;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #d4e5f9;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      padding: 30px;
+      width: 250px;
+
+      .plan_card_name {
+        align-items: center;
+        display: flex;
+        font-family: Montserrat, sans-serif;
+        justify-content: space-between;
+        min-height: 34px;
+        width: 100%;
+
+        h3 {
+          color: #607691;
+          font-size: 16px;
+          font-weight: 700;
+          margin: 0;
+        }
+        .plan_card_name_label {
+          align-items: center;
+          background: #ff8163;
+          border-radius: 0.5rem;
+          color: #fff;
+          display: flex;
+          font-size: 12px;
+          font-weight: 700;
+          justify-content: center;
+          padding: 7px 7px;
+        }
+      }
+      .plan_card_price_original {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+
+        span {
+          text-decoration: line-through;
+        }
+      }
+
+      .plan_card_description {
+        border-bottom: 1px solid #e4e3e3;
+        display: flex;
+        flex: 1 0 auto;
+        margin-top: 0.5rem;
+        width: 100%;
+
+        .plan_card_description_items {
+          line-height: 1.5;
+          color: #607691;
+          text-align: left;
+          padding-left: 15px;
+
+          li {
+            padding-left: 5px;
+
+            span {
+              text-decoration: line-through;
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .custom_description {
+          padding: 0;
+        }
+      }
+
+      .button_container {
+        margin-top: 10px;
+        width: 100%;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 8px 0;
+
+        .button {
+          background-color: #6fdf90;
+          border-radius: 4px;
+          color: #251e2f;
+          font-size: 12px;
+          height: 42px;
+          text-transform: uppercase;
+          transition: all 0.475s;
+          width: 100%;
+          cursor: pointer;
+          font-weight: 600;
+
+          &:hover {
+            background-color: #42965b;
+          }
+        }
+      }
+    }
+  }
+
+  .button_container {
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px 0;
+
+    .button {
+      background-color: #6fdf90;
+      border-radius: 4px;
+      color: #251e2f;
+      font-size: 12px;
+      height: 42px;
+      text-transform: uppercase;
+      transition: all 0.475s;
+      width: 100%;
+      cursor: pointer;
+      border: none;
+
+      &:hover {
+        background-color: #42965b;
+      }
+    }
+  }
+}

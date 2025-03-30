@@ -1,0 +1,41 @@
+
+{
+    "plans": [
+      {
+        "id": "trial",
+        "name": "Trial",
+        "price": "7.99",
+        "discount": { "type": "percentage", "value": 3.99 },
+        "bandwidth": { "unit": "GB", "value": 1 },
+        "price_per_unit": 7.99,
+        "additional_features": [
+          "1 GB bandwidth",
+          "Email support",
+          "One-time purchase"
+        ]
+      },
+      {
+        "id": "starter",
+        "name": "Starter",
+        "price": "210.00",
+        "discount": { "type": "percentage", "value": 105 },
+        "bandwidth": { "unit": "GB", "value": 10 },
+        "price_per_unit": "7.00",
+        "additional_features": [
+          "30 GB bandwidth",
+          "24/7 Slack support",
+          "Cancel anytime",
+          "Unused bandwidth rolls over to the next month"
+        ]
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "price": "Custom Pricing",
+        "additional_features": [
+          "Not seeing a plan that fits your needs? We can help."
+        ]
+      }
+    ]
+  }
+  
