@@ -23,31 +23,28 @@ const CardPlans = () => {
         <div className="plan_card">
           <div className="plan_card_name">
             <h3>{plansFirstCard.name}</h3>
-            <div className="plan_card_name_label">-50% OFF</div>
+            <div className="plan_card_name_label">{`-${plansFirstCard.discount.value}% OFF`}</div>
           </div>
           <div className="plan_card_price_original">
             <p>
               <span>{`$${plansFirstCard.price}`}</span>
             </p>
             <p className='plan_card_price_discount'>
-              {`$${(plansFirstCard.discount.value).toFixed(2)}`}
+              {`$${(plansFirstCard.price / 2).toFixed(2) - 0.01}`}
             </p>
           </div>
           <div className='plan_card_description'>
             <ul className='plan_card_description_items'>
               <li>
-                {plansFirstCard.additional_features[0]}
+               { `${plansFirstCard.bandwidth.value} ${plansFirstCard.bandwidth.unit} bandwidth` }
               </li>
               <li>
                 <span>{`$${plansFirstCard.price_per_unit}`}</span>
-                {`$${(plansFirstCard.discount.value).toFixed(2)} / GB`}
+                {`$${(plansFirstCard.price_per_unit / 2).toFixed(2) - 0.01} / ${plansFirstCard.bandwidth.unit}`}
               </li>
-              <li>
-                {plansFirstCard.additional_features[1]}
-              </li>
-              <li>
-                {plansFirstCard.additional_features[2]}
-              </li>
+              {plansFirstCard.additional_features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
 
             </ul>
           </div>
@@ -60,27 +57,26 @@ const CardPlans = () => {
         <div className="plan_card">
           <div className="plan_card_name">
             <h3>{plansSecondCard.name}</h3>
-            <div className="plan_card_name_label">-50% OFF</div>
+            <div className="plan_card_name_label">{`-${plansSecondCard.discount.value}% OFF`}</div>
           </div>
           <div className="plan_card_price_original">
             <p>
               <span>{`$${plansSecondCard.price}`}</span>
             </p>
             <p className='plan_card_price_discount'>
-              {`$${(plansSecondCard.discount.value).toFixed(2)}`}
+              {`$${(plansSecondCard.price / 2).toFixed(2)}`}
             </p>
           </div>
           <div className='plan_card_description'>
             <ul className='plan_card_description_items'>
               <li>
-                {plansSecondCard.additional_features[0]}
+              { `${plansSecondCard.bandwidth.value} ${plansSecondCard.bandwidth.unit} bandwidth` }
               </li>
               <li>
                 <span>{`$${plansSecondCard.price_per_unit}`}</span>
                 {`$${(plansSecondCard.price_per_unit / 2).toFixed(2)} / GB`}
               </li>
-              {plansSecondCard.additional_features.filter((_, index) => index !== 0)  
-                .map((feature, index) => (
+              {plansSecondCard.additional_features.map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
 
@@ -95,7 +91,7 @@ const CardPlans = () => {
         <div className="plan_card">
           <div className="plan_card_name">
             <h3>{plansThirdCard.name}</h3>
-            <div className="plan_card_name_label">-50% OFF</div>
+            <div className="plan_card_name_label">{`-${plansThirdCard.discount.value}% OFF`}</div>
           </div>
           <div className="plan_card_price_original custom_price">
             <p>
